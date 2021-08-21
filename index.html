@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- BootsTrap StyleSheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+   <main >
+       <section class="mt-5">
+           <div class="container">
+               <div class="row">
+                <div class="col-5">
+                    <img class="img-fluid" src="images/mac.png" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p class="fs-2 fw-bold">Customize your Blue 24-inch iMac with Apple M1 chip.</p>
+                    <p>The Apple M1 is an ARM-based system on a chip. It was designed by Apple Inc. as a central processing unit and graphics processing unit for its Macintosh computers and iPad Pro tablets. It was inspired by their Apple A14 Bionic chip.</p>
+
+                    <!-- For Memory -->
+                    <h3>Memory</h3>
+                    <div class="d-flex justify-content-around mt-3">
+                        <h4 id="first-memory" class="border border-3 border-info rounded-3 px-4 py-2">8gb Memory</h4>
+                        <h4 id="second-memory" class="border border-3 border-info rounded-3 px-4 py-2">16gb Memory</h4>
+                    </div>
+
+                    <!-- For Storage -->
+                    <h3 class="mt-4">Storage</h3>
+                    <div class="d-flex justify-content-around mt-3">
+                        <h4 id="first-storage" class="border border-3 rounded-3 border-info px-4 py-2">256gb SSD</h4>
+                        <h4 id="second-storage" class="border border-3 border-info rounded-3 px-4 py-2">512gb SSD</h4>
+                        <h4 id="third-storage" class="border border-3 border-info rounded-3 px-4 py-2">1TB SSD</h4>
+                    </div>
+
+                    <!-- Choose Your Delivery Option -->
+                    <h3 class="mt-4">Choose Your Delivery Option</h3>
+                    <div class="d-flex justify-content-around mt-3">
+                        <h4 id="free-delivery" class="border border-3 border-info rounded-3 px-4 py-2">Friday, Aug 25 Free Prime Delivery</h4>
+                        <h4 id="urgent-delivery" class="border border-3 border-info rounded-3 px-4 py-2 ms-2">Friday, Aug 21 Delivery Charge $20</h4>
+                    </div>
+
+                    <!-- Price Managment -->
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Best Price</h3>
+                            </div>
+                            <div class="col-6">
+                                <h3>$<span id="base-cost" >1299</span></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Extra Memory Cost</h3>
+                            </div>
+                            <div class="col-6">
+                                <h3>$<span id="memory-cost">0</span></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Extra Storage Cost</h3>
+                            </div>
+                            <div class="col-6">
+                                <h3>$<span id="storage-cost">0</span></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Delivery Charge</h3>
+                            </div>
+                            <div class="col-6">
+                                <h3>$<span id="delivery-cost">0</span></h3>
+                            </div>
+                        </div>
+                        <hr style="height: 3px; width: 70%; color: red;">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Total Price</h3>
+                            </div>
+                            <div class="col-6">
+                                <h3>$<span id="total-price">1299</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Promo Code -->
+                    <div class="my-4">
+                        <h4>Add Promo Code</h4>
+                        <input type="text"
+                        placeholder="add promo code for discount"
+                type="text"
+                name="promocode"
+                id="promo-input"
+                        >
+                        <button id="apply-promo" class="border-0 bg-danger rounded-3 py-1 px-3">Apply</button>
+                    </div>
+                  </div>
+               </div>
+           </div>
+           
+       </section>
+     
+
+       <hr style="height: 3px; width: 90%; color: red;" class="mx-auto mx-4">
+       <h2 class="text-center">Total: $<span id="bottom-total" >1299</span></h2>
+   </main>
+
+
+    <script src="js/mac-book.js"></script>
+</body>
+</html>
